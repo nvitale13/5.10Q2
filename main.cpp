@@ -1,14 +1,21 @@
 #include <iostream>
 #include <iomanip>
 using std::cout;
+using std::cin;
 using std::endl;
 using std::setprecision;
 using std::ios;
 
 int main() 
 {
-  float radius = 76.83F;
-  float height = 297.04F;
+ float radius = 0;
+ float height = 0;
+
+  cout << "Enter radius: ";
+  cin >> radius;
+  cout << "Enter height: ";
+  cin >> height;
+
   const double PI = 3.1416;
 
   double volume = PI * (radius*radius) * height;
